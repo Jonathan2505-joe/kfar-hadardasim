@@ -1,5 +1,5 @@
 // Offline support: the whole game is one page, cached on first visit.
-const CACHE = 'kfar-v1791430433311';
+const CACHE = 'kfar-v1791430970455';
 const CORE = ['./', 'index.html', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => {
